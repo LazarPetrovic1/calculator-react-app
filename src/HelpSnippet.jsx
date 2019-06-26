@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HelpSnippet.css";
+import "./styles/HelpSnippet.css";
 
 function HelpSnippet() {
   const [show, setShow] = useState(false);
