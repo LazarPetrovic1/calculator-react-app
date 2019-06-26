@@ -1,0 +1,17 @@
+.HelpSnippet {
+  width: 70%;
+  margin: 10px auto;
+  border: 1px solid black;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.HelpSnippet-shower {
+  font-size: 40px;
+  font-weight: bolder;
+  color: maroon;
+}
+
+.HelpSnippet-list {
+  list-style-type: none;
+}
