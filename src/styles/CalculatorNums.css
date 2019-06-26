@@ -1,0 +1,30 @@
+.CalculatorNums {
+  /* margin-top: 20%; */
+  display: flex;
+}
+
+.CalculatorNums-numpad {
+  display: flex;
+  flex-flow: row wrap;
+  width: 300px;
+}
+
+.CalculatorNums-number {
+  width: 100px;
+  height: 100px;
+}
+
+.CalculatorNums-number:nth-child(10) {
+  width: 100%;
+}
+
+.CalculatorNums-signpad {
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  width: 200px;
+}
+
+.CalculatorNums-operator {
+  width: 100px;
+  height: 100px;
+}

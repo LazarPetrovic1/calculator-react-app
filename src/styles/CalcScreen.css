@@ -1,0 +1,9 @@
+.CalcScreen {
+  width: 470px;
+  height: 100px;
+  background-color: #333;
+  color: ivory;
+  font-size: 3em;
+  text-align: right;
+  padding: 0 15px;
+}
