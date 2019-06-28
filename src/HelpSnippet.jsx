@@ -13,8 +13,8 @@ function HelpSnippet() {
       <div className="HelpSnippet-shower" onClick={changeShow}>
         {show ? "↑" : "↓"}
       </div>
-      <h2>Help snippet</h2>
-      <p>
+      <h2 className="HelpSnippet-intro">Help snippet</h2>
+      <p className="HelpSnippet-intro">
         {show
           ? `This snippet explains shortcuts, so you can use the calculator via
         keyboard:`
@@ -40,7 +40,14 @@ function HelpSnippet() {
             <code>Backspace</code> also exists (due to prevalent human error).
           </li>
           <li className="HelpSnippet-item">
-            Roots will be added sooner or later.
+            Open parenthesis <code>(</code> is on keycode <code>219</code> (open
+            bracket => <code>[</code>), while the closing parenthesis
+            <code>)</code> is on keycode
+            <code>221</code> (closed bracket => <code>]</code>).
+          </li>
+          <li>Roots can be derived by using fractal exponentiation.</li>
+          <li>
+            Press <code>m</code> for quick modulus (remainder).
           </li>
         </ul>
       )}

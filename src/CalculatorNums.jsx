@@ -17,8 +17,13 @@ function CalculatorNums() {
   }
 
   function handlePress(e) {
+    console.log(e);
     e.preventDefault();
     switch (e.keyCode) {
+      case 48:
+      case 96:
+        setClicked(clicked.concat(0));
+        break;
       case 49:
       case 97:
         setClicked(clicked.concat(1));
@@ -86,6 +91,15 @@ function CalculatorNums() {
         break;
       case 67:
         setClicked("");
+        break;
+      case 219:
+        setClicked(clicked.concat("("));
+        break;
+      case 221:
+        setClicked(clicked.concat(")"));
+        break;
+      case 77:
+        setClicked(clicked.concat("%"));
         break;
       default:
         console.log("Not a supported operation");
@@ -188,6 +202,22 @@ function CalculatorNums() {
           >
             0
           </button>
+          <button
+            className="CalculatorNums-operator"
+            onClick={reset}
+            value="C"
+            onKeyDown={handlePress}
+          >
+            C
+          </button>
+          <button
+            className="CalculatorNums-operator"
+            onClick={handleChange}
+            value="%"
+            onKeyDown={handlePress}
+          >
+            %
+          </button>
         </div>
         <div className="CalculatorNums-signpad">
           <button
@@ -225,19 +255,28 @@ function CalculatorNums() {
           <button
             className="CalculatorNums-operator"
             onClick={handleChange}
+            value="("
+            onKeyDown={handlePress}
+          >
+            (
+          </button>
+          <button
+            className="CalculatorNums-operator"
+            onClick={handleChange}
+            value=")"
+            onKeyDown={handlePress}
+          >
+            )
+          </button>
+          <button
+            className="CalculatorNums-operator"
+            onClick={handleChange}
             value="."
             onKeyDown={handlePress}
           >
             .
           </button>
-          <button
-            className="CalculatorNums-operator"
-            onClick={handleChange}
-            value="**"
-            onKeyDown={handlePress}
-          >
-            **
-          </button>
+
           <button
             className="CalculatorNums-operator"
             onClick={evaluate}
@@ -245,14 +284,6 @@ function CalculatorNums() {
             onKeyDown={handlePress}
           >
             =
-          </button>
-          <button
-            className="CalculatorNums-operator"
-            onClick={reset}
-            value="C"
-            onKeyDown={handlePress}
-          >
-            C
           </button>
         </div>
       </div>

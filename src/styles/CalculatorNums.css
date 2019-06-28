@@ -14,9 +14,9 @@
   height: 100px;
 }
 
-.CalculatorNums-number:nth-child(10) {
-  width: 100%;
-}
+/* .CalculatorNums-number:nth-child(10) {
+  width: calc(100% / 3 * 2);
+} */
 
 .CalculatorNums-signpad {
   /* display: flex; */

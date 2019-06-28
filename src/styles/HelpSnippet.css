@@ -10,8 +10,22 @@
   font-size: 40px;
   font-weight: bolder;
   color: maroon;
+  cursor: pointer;
+  user-select: none;
 }
 
 .HelpSnippet-list {
   list-style-type: none;
+}
+
+code::selection {
+  background-color: black;
+  color: yellow;
+}
+
+.HelpSnippet-intro::selection,
+.HelpSnippet-list::selection,
+.HelpSnippet-item::selection {
+  background-color: lightgray;
+  color: maroon;
 }

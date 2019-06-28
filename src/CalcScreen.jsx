@@ -10,7 +10,7 @@ function CalcScreen(props) {
     //   value={value}
     //   onChange={handleChange}
     // />
-    <div className="CalcScreen">{clicked}</div>
+    <div className="CalcScreen">{!clicked ? "0" : clicked}</div>
   );
 }
 
